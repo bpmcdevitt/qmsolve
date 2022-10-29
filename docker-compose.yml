@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+  qmsolve_app:
+    build: '.'
+    volumes: 
+      - './examples:/opt/app/examples'
+
+volumes:
+  qmsolve_app:
+    driver: local
